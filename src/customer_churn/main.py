@@ -1,18 +1,11 @@
-from config import (
-    DATA_PATH,
-    MODEL_PATH
-)
-
-from load_data import load_data
-from preprocess import preprocess_data
-from feature_engineering import create_features
-from eda import (
-    plot_churn_distribution,
-    plot_correlation_heatmap
-)
-from train import train_model
-from evaluate import evaluate_model
-from save_model import save_model
+from .config import DATA_PATH, MODEL_PATH
+from .load_data import load_data
+from .preprocess import preprocess_data
+from .feature_engineering import create_features
+from .eda import plot_churn_distribution, plot_correlation_heatmap
+from .train import train_model
+from .evaluate import evaluate_model
+from .save_model import save_model
 
 def main():
     print ("\nLoading Dataset..")

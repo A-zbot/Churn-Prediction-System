@@ -1,7 +1,8 @@
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
-from config import TEST_SIZE, RANDOM_STATE
+
+from .config import TEST_SIZE, RANDOM_STATE
 
 
 def train_model(df):
